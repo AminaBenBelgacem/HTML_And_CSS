@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+}
+ul {
+  list-style: none;
+}
+.container{
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Start Header */
+header
+{
+  padding-top:30px;
+position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  /* color: #332d2d; */
+}
+header .logo span
+{
+  color: #C06B3E;
+}
+header .container 
+{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+header ul
+{
+  /* display: flex; */
+  /* gap: 20px; */
+
+
+  background-color:#4f535c ;
+  padding: 15px 40px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+}
+
+header a 
+{
+  text-decoration: none;
+  color: #fb920d;
+}
+header a:hover{
+  color: #C06B3E;
+}
+
+header h3
+{
+  font-size:25px;
+  transform: skewY(-15deg)
+}
+
+/* end header */
+
+/* Start landing */
+.landing
+{
+  padding-top: 30px;
+   min-height: 100vh;
+  background-image: url("../images/ballon1.jpg");
+  background-size: cover;
+  position: relative;
+  color:#332d2d ;
+}
+.landing .container
+{
+  
+}
+.landing .container .text
+{
+  position: absolute;
+    top: 50%;
+  width:50%;
+
+}
+@media (max-width: 768px) {
+  .landing .container
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .landing .container .text{
+    text-align: center;
+    top: 50%;
+
+  }
+}
+.landing .text h3
+{
+font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+   color: #fb920d;
+}
+.landing .text p
+{
+font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.landing .text button
+{
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #fb920d;
+
+}
+.landing .text button:hover
+{
+  color: #fff;
+  background: #C06B3E;
+
+}
+
+
+
